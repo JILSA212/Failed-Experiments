@@ -1,0 +1,16 @@
+﻿x,y
+Every bird has feathers.,for_all(x)(Bird(x) IMPLIES HasFeathers(x))
+Some animals can fly.,there_exists(x)(Animal(x) AND CanFly(x))
+All planets orbit around the sun.,"for_all(x)(Planet(x) IMPLIES Orbits(x, Sun))"
+A triangle has three sides.,"for_all(x)(Triangle(x) IMPLIES HasSides(x, 3))"
+All mammals give birth to live young.,"for_all(x)(Mammal(x) IMPLIES GivesBirthTo(x, LiveYoung))"
+Some people are allergic to pollen.,"there_exists(x)(Person(x) AND AllergicTo(x, Pollen))"
+No reptile can produce milk.,for_all(x)(Reptile(x) IMPLIES NOT ProducesMilk(x))
+Every square is a rectangle.,for_all(x)(Square(x) IMPLIES Rectangle(x))
+Some flowers are blue.,there_exists(x)(Flower(x) AND Blue(x))
+No dog can meow.,for_all(x)(Dog(x) IMPLIES NOT Meows(x))
+Every prime number is odd.,for_all(x)(Prime(x) IMPLIES Odd(x))
+Some fish live in freshwater.,"there_exists(x)(Fish(x) AND LivesIn(x, Freshwater))"
+All squares have four sides.,"for_all(x)(Square(x) IMPLIES HasSides(x, 4))"
+Some mammals lay eggs.,there_exists(x)(Mammal(x) AND LaysEggs(x))
+No insect has a backbone.,for_all(x)(Insect(x) IMPLIES NOT HasBackbone(x))

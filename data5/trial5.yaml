@@ -1,0 +1,51 @@
+# toy_en_de.yaml
+
+## Where the samples will be written
+save_data: trial5/run/example
+## Where the vocab(s) will be written
+src_vocab: trial5/run/example.vocab.src
+tgt_vocab: trial5/run/example.vocab.tgt
+# Prevent overwriting existing files in the folder
+overwrite: False
+
+# Corpus opts:
+data:
+    corpus_1:
+        path_src: drive/MyDrive/opennmt_data/trial5/data/x.txt
+        path_tgt: drive/MyDrive/opennmt_data/trial5/data/y.txt
+    valid:
+        path_src: drive/MyDrive/opennmt_data/trial5/data/x_val.txt
+        path_tgt: drive/MyDrive/opennmt_data/trial5/data/y_val.txt
+
+# Vocabulary files that were just created
+src_vocab: trial5/run/example.vocab.src
+tgt_vocab: trial5/run/example.vocab.tgt
+
+# Train on a single GPU
+world_size: 1
+gpu_ranks: [0]
+
+# Where to save the checkpoints
+save_model: trial5/run/model
+# save_checkpoint_steps: 500
+save_checkpoint_steps: 5
+# train_steps: 1000
+# valid_steps: 500
+train_steps: 10
+valid_steps: 5
+
+# Model
+encoder_type: transformer
+decoder_type: transformer
+position_encoding: true
+enc_layers: 3
+dec_layers: 3
+heads: 4
+hidden_size: 256
+word_vec_size: 256
+transformer_ff: 1024
+dropout_steps: [0]
+dropout: [0.1]
+attention_dropout: [0.1]
+share_decoder_embeddings: true
+share_embeddings: true

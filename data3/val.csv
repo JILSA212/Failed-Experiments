@@ -1,0 +1,16 @@
+﻿x,y
+No two snowflakes are identical.,"for_all(x)for_all(y)((Snowflake(x) AND Snowflake(y) AND x NOT EQUAL y) IMPLIES NOT Identical(x, y))"
+All planets in the solar system orbit the sun.,"for_all(x)(Planet(x) IMPLIES Orbits(x, Sun))"
+Some songs can be played on the guitar.,"there_exists(x)(Song(x) AND CanBePlayedOn(x, Guitar))"
+All prime numbers are odd.,for_all(x)(PrimeNumber(x) IMPLIES IsOdd(x))
+Some birds can fly backwards.,there_exists(x)(Bird(x) AND CanFlyBackwards(x))
+All cats have retractable claws.,for_all(x)(Cat(x) IMPLIES HasRetractableClaws(x))
+Some desserts are made with chocolate.,"there_exists(x)(Dessert(x) AND MadeWith(x, Chocolate))"
+No one is perfect.,NOT there_exists(x)(Perfect(x))
+Every rectangle has four sides.,"for_all(x)(Rectangle(x) IMPLIES HasSides(x, 4))"
+Some fish can change color.,there_exists(x)(Fish(x) AND CanChangeColor(x))
+All human beings are born equal.,for_all(x)(HumanBeing(x) IMPLIES BornEqual(x))
+Some people are left-handed.,there_exists(x)(Person(x) AND LeftHanded(x))
+No one is allowed to park in the fire lane.,NOT there_exists(x)(ParksInFireLane(x))
+Every triangle has three angles.,"for_all(x)(Triangle(x) IMPLIES HasAngles(x, 3))"
+Some spiders spin webs to catch prey.,there_exists(x)(Spider(x) AND SpinsWeb(x) AND CatchesPreyWithWeb(x))
